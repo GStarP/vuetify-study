@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar app>
       <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify-TEST</span>
+        <span class="ml-2">Vuetify-Study</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <!-- target="_blank" 规定了新标签页打开 -->
