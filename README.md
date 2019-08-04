@@ -1,29 +1,22 @@
-# vuetify-test
+# vuetify-study
 
-## Project setup
-```
-yarn install
-```
+## 运行
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
+```cmd
+npm install
+npm run serve
 ```
 
-### Compiles and minifies for production
-```
-yarn run build
-```
+## 安装 Vuetify
 
-### Run your tests
-```
-yarn run test
-```
+- 使用 vue-cli 3 初始化一个 Vue 项目
 
-### Lints and fixes files
-```
-yarn run lint
-```
+    - 若无法使用 vue-cli 3 请参照 [官方文档](https://vuetifyjs.com/zh-Hans/getting-started/quick-start)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- 命令行执行 vue add vuetify
+
+- 命令执行完毕后将初始化一个 Vuetify 的目录结构
+
+    - 若出现问题，尝试新建 src/plugins/vuetify.js 文件并重试
+
+    - 其他意外情况请参照 [官方文档](https://vuetifyjs.com/zh-Hans/getting-started/quick-start)
