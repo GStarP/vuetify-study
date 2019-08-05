@@ -4,6 +4,7 @@
 
 ```cmd
 npm install
+
 npm run serve
 ```
 
@@ -20,3 +21,19 @@ npm run serve
     - 若出现问题，尝试新建 src/plugins/vuetify.js 文件并重试
 
     - 其他意外情况请参照 [官方文档](https://vuetifyjs.com/zh-Hans/getting-started/quick-start)
+
+## 安装 iconfont-mdi
+
+- 命令行执行 npm install @mdi/font -D
+
+- 在 /plugins/vuetify.js 中引入
+
+```js
+import '@mdi/font/css/materialdesignicons.css'
+
+export default new Vuetify({
+  icons: {
+    iconfont: 'mdi'
+  }
+})
+```
