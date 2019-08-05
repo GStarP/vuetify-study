@@ -9,10 +9,14 @@
 
 ## 通用 class
 
-|      类名      |     作用     |
-| :------------: | :----------: |
-| m[$dire]-[1-?] | 指定 margin  |
-| p[$dire]-[1-?] | 指定 padding |
+|        类名         |        作用        |
+| :-----------------: | :----------------: |
+|   m[$dire]-[1-?]    |    指定 margin     |
+|   p[$dire]-[1-?]    |    指定 padding    |
+| :elevation="[0-24]" | 指定海拔(阴影程度) |
+|      absolute       |         /          |
+|   justify-center    |         /          |
+|    align-center     |         /          |
 
 
 
@@ -23,6 +27,7 @@
 | grid-list-[$size] |     指定宽度为定值     |
 |       fluid       | 指定 max-width 为 100% |
 |    text-center    |   使其中文字全部居中   |
+|    fill-height    |        纵向拉满        |
 
 ## v-layout
 
@@ -40,9 +45,42 @@
 
 ## v-card
 
-| 属性名 |       作用       |
-| :----: | :--------------: |
-|  dark  |  将文字设为白色  |
-| hover  | 添加鼠标指针效果 |
-| raised |   添加阴影效果   |
+| 属性名 |      作用      |
+| :----: | :------------: |
+|  dark  | 将文字设为白色 |
+| raised |  添加阴影效果  |
+
+## v-list
+
+| 属性名 |            作用            |
+| :----: | :------------------------: |
+|  nav   | 增加第一个item和其他的间隙 |
+|        |          减小空隙          |
+
+
+## v-list-item
+
+|  属性名  |       作用       |
+| :------: | :--------------: |
+| two-line | 可以显示两行内容 |
+|          |   添加点击相关   |
+
+## v-input
+
+这玩意居然不是输入框？？？我惊了。反正我用的是 v-text-field......
+
+## v-text-field
+
+|          属性名          |         作用         |
+| :----------------------: | :------------------: |
+|         label=""         |    同 placeholder    |
+|           solo           |        带边框        |
+|         rounded          |       圆角边框       |
+|        clearable         |       带清空键       |
+|   append-icon="mdi-*"    |       后 icon        |
+|   prepend-icon="mdi-*"   |       前 icon        |
+| @click:append/prepend="" | 为 icon 添加点击事件 |
+|                          |                      |
+
+
 

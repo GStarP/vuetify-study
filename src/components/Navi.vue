@@ -6,11 +6,15 @@
         :key="item.id"
         :class="{ [`md${getWidth(item.id)}`]: true }"
       >
-        <v-card class="navi-card" color="primary" dark raised hover @click="navigateTo(item.to)">
-          <v-responsive :aspect-ratio="16/9">
-            <v-card-text class="navi-card-txt" v-text="item.txt"></v-card-text>
-          </v-responsive>
-        </v-card>
+        <!-- v-hover还要在其包裹的元素上加 :elevation -->
+        <v-hover v-slot:default="{ hover }">
+          <v-card class="navi-card" color="primary" dark @click="navigateTo(item.to)" :elevation="hover ? 24 : 2">
+            <!-- 固定宽高比 -->
+            <v-responsive :aspect-ratio="16/9">
+              <v-card-text class="navi-card-txt" v-text="item.txt"></v-card-text>
+            </v-responsive>
+          </v-card>
+        </v-hover>
       </v-flex>
     </v-layout>
   </v-container>
@@ -23,12 +27,12 @@ export default {
       lineNum: 4,
       naviList: [{
         id: 1,
-        txt: '头像&文字',
-        to: '/info'
+        txt: '菜单',
+        to: '/menu'
       }, {
         id: 2,
-        txt: 'Card',
-        to: ''
+        txt: '搜索&列表',
+        to: '/search'
       }, {
         id: 3,
         txt: 'Card',
