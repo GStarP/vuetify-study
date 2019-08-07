@@ -31,7 +31,7 @@ export default {
         to: '/menu'
       }, {
         id: 2,
-        txt: '搜索&列表',
+        txt: '输入&列表&对话框&提示',
         to: '/search'
       }, {
         id: 3,

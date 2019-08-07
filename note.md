@@ -80,7 +80,7 @@
 |   append-icon="mdi-*"    |       后 icon        |
 |   prepend-icon="mdi-*"   |       前 icon        |
 | @click:append/prepend="" | 为 icon 添加点击事件 |
-|                          |                      |
+|         hint=""          |     底部提示文字     |
 
 
 

@@ -11,7 +11,7 @@
             <v-list class="py-0" nav>
               <v-list-item two-line>
                 <v-list-item-avatar>
-                  <img src="https://randomuser.me/api/portraits/men/81.jpg">
+                  <img src="https://s2.ax1x.com/2019/08/07/eIE51U.jpg">
                 </v-list-item-avatar>
                 <v-list-item-content>
                   <v-list-item-title>江城子</v-list-item-title>
