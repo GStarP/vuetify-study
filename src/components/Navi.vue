@@ -35,8 +35,8 @@ export default {
         to: '/search'
       }, {
         id: 3,
-        txt: 'Card',
-        to: ''
+        txt: '进度条',
+        to: '/loading'
       }, {
         id: 4,
         txt: 'Card',

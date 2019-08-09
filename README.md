@@ -37,3 +37,43 @@ export default new Vuetify({
   }
 })
 ```
+
+## Loading 组件需要依赖 Koa2
+
+- 命令行执行 npm install koa-generator -g 安装生成器
+
+- 命令行执行 koa2 service 生成一个 koa2 项目
+
+- 命令行执行 cd service 进入项目目录
+
+- 命令行执行 npm install 安装依赖
+
+- 修改 index.js 文件，添加如下代码并保存
+
+```js
+  router.get('/getLoadingMsg', async (ctx, next) => {
+  // 封装一个延时响应的函数
+  async function delay (time) {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve();
+      }, time)
+    })
+  }
+  await delay(3000)
+  // 为了允许跨域请求设置的 Headers
+  ctx.set('Access-Control-Allow-Origin', '*')
+  ctx.set('Access-Control-Allow-Methods', 'GET')
+  ctx.body = {
+    data: 'hxwnb'
+  }
+})
+```
+
+- 命令行执行 npm start 启动服务
+
+- 访问 http://localhost:3030/getLoadingMsg
+
+  - 若操作正常，应该在 3s 后得到返回数据
+
+  - 保持 koa2 启动，此时 Loading 组件可以观察到效果
