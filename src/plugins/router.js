@@ -1,13 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import Navi from '../components/Navi.vue'
-import Menu from '../components/Menu.vue'
-import Menu1 from '../components/menu/Menu1.vue'
-import Menu2 from '../components/menu/Menu2.vue'
-import Menu3 from '../components/menu/Menu3.vue'
-import Search from '../components/Search.vue'
-
 Vue.use(Router)
 
 export default new Router({
@@ -20,11 +13,11 @@ export default new Router({
     },
     {
       path: '/',
-      component: Navi
+      component: () => import('../components/Navi.vue')
     },
     {
       path: '/menu',
-      component: Menu,
+      component: () => import('../components/Menu.vue'),
       children: [
         {
           path: '/',
@@ -32,23 +25,27 @@ export default new Router({
         },
         {
           path: '/menu1',
-          component: Menu1
+          component: () => import('../components/menu/Menu1.vue')
         }, {
           path: '/menu2',
-          component: Menu2
+          component: () => import('../components/menu/Menu2.vue')
         }, {
           path: '/menu3',
-          component: Menu3
+          component: () => import('../components/menu/Menu3.vue')
         }
       ]
     },
     {
       path: '/search',
-      component: Search
+      component: () => import('../components/Search.vue')
     },
     {
       path: '/loading',
       component: () => import('../components/Loading.vue')
+    },
+    {
+      path: '/page',
+      component: () => import('../components/Page.vue')
     }
   ]
 })

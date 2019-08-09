@@ -35,12 +35,12 @@ export default {
         to: '/search'
       }, {
         id: 3,
-        txt: '进度条',
+        txt: 'Loading动画',
         to: '/loading'
       }, {
         id: 4,
-        txt: 'Card',
-        to: ''
+        txt: '分页',
+        to: '/page'
       }, {
         id: 5,
         txt: 'Card',
