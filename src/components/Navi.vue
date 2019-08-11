@@ -43,8 +43,8 @@ export default {
         to: '/page'
       }, {
         id: 5,
-        txt: 'Card',
-        to: ''
+        txt: '表单验证',
+        to: '/form-validate'
       }, {
         id: 6,
         txt: 'Card',

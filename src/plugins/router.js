@@ -46,6 +46,10 @@ export default new Router({
     {
       path: '/page',
       component: () => import('../components/Page.vue')
+    },
+    {
+      path: '/form-validate',
+      component: () => import('../components/FormValidate.vue')
     }
   ]
 })
