@@ -94,3 +94,12 @@
 ## v-content
 
 与带有 app 属性的元素并列，占满剩余空间
+
+## v-data-table
+
+|       属性名        |                        作用                        |
+| :-----------------: | :------------------------------------------------: |
+| hide-default-footer |                   隐藏自带的分页                   |
+| :loading="boolean"  |                  控制进度条的显示                  |
+|    loading-text     | 当 :loading 为 false 且 :items 为 undefined 时显示 |
+

@@ -50,6 +50,10 @@ export default new Router({
     {
       path: '/form-validate',
       component: () => import('../components/FormValidate.vue')
+    },
+    {
+      path: '/table',
+      component: () => import('../components/Table.vue')
     }
   ]
 })

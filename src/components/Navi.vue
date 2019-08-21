@@ -47,8 +47,11 @@ export default {
         to: '/form-validate'
       }, {
         id: 6,
-        txt: 'Card',
-        to: ''
+        txt: '表格',
+        to: '/table'
+      }, {
+        id: 7,
+        txt: 'Card'
       }]
     }
   },
